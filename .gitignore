@@ -1,0 +1,8 @@
+# Documentos de trabajo que no deben publicarse en el sitio
+*.docx
+borradores/
+
+# Archivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
