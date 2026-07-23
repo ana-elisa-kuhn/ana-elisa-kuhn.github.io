@@ -407,6 +407,7 @@ body.dark-mode .stat-card {
 
 .work-filters {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
@@ -645,6 +646,159 @@ body.dark-mode .project-card {
 
 .contact-method i {
     font-size: 2rem;
+}
+
+/* ==================== CERTIFICACIONES (página aparte) ==================== */
+
+.certs {
+    padding: 8rem 2rem 5rem;
+    background-color: var(--light-bg);
+    min-height: 100vh;
+    transition: var(--transition);
+}
+
+.certs-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+body.dark-mode .cert-card {
+    background-color: #2a2a2a;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.certs-counter {
+    margin-top: 1.25rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.certs-counter span {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.cert-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+
+.cert-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.cert-year {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.cert-card h3 {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.cert-inst {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.cert-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.cert-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--light-bg);
+    color: var(--text-light);
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+body.dark-mode .cert-badge {
+    background-color: #1f1f1f;
+}
+
+.cert-card .cert-link {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.cert-card .cert-link:hover {
+    gap: 0.7rem;
+}
+
+.certs-cta {
+    max-width: 700px;
+    margin: 4rem auto 0;
+    text-align: center;
+}
+
+.certs-cta p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.certs-cta .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+/* Tarjeta de estadística que funciona como link */
+a.stat-card {
+    display: block;
+    text-decoration: none;
+}
+
+a.stat-card p i {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    color: var(--secondary-color);
 }
 
 /* ==================== FOOTER ==================== */

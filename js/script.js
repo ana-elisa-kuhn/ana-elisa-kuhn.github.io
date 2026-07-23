@@ -59,7 +59,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ==================== NAVBAR STICKY EFFECT ====================
 
 const navbar = document.querySelector('.navbar');
-let lastScrollY = 0;
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -67,13 +66,12 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
     }
-    lastScrollY = window.scrollY;
 });
 
 // ==================== FILTER PROJECTS ====================
 
 const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll('.project-card, .cert-card');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -116,10 +114,40 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observar todos los elementos animables
-document.querySelectorAll('.project-card, .stat-card, .process-step').forEach(el => {
+document.querySelectorAll('.project-card, .stat-card, .process-step, .cert-card').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
+
+// ==================== CONTADOR DE CERTIFICACIONES ====================
+
+const certCounter = document.getElementById('certCounter');
+if (certCounter) {
+    const total = document.querySelectorAll('.cert-card').length;
+
+    const animarConteo = () => {
+        let current = 0;
+        const timer = setInterval(() => {
+            current++;
+            certCounter.textContent = current;
+            if (current >= total) {
+                clearInterval(timer);
+            }
+        }, 50);
+    };
+
+    // Arrancar el conteo solo cuando el contador entra en pantalla
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animarConteo();
+                obs.disconnect();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counterObserver.observe(certCounter);
+}
 
 // ==================== ACTIVE NAV LINK ON SCROLL ====================
 
