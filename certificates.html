@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Certificaciones y cursos de Ana Elisa Kuhn.">
+    <title>Certificaciones &amp; Cursos | Ana Elisa Kuhn</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#about" class="nav-link">Sobre Mí</a>
+                <a href="index.html#work" class="nav-link">Proyectos</a>
+                <a href="index.html#contact" class="nav-link">Contacto</a>
+            </nav>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CERTIFICACIONES -->
+    <section class="certs">
+        <div class="section-header">
+            <h2>Certificaciones &amp; Cursos</h2>
+            <div class="accent-line"></div>
+            <p class="certs-counter"><span id="certCounter">31</span> cursos completados</p>
+        </div>
+
+        <div class="work-filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="programacion">Programación</button>
+            <button class="filter-btn" data-filter="datos">Datos</button>            
+            <button class="filter-btn" data-filter="administracion">Gobernanza</button>
+            <button class="filter-btn" data-filter="genero">Género</button>            
+            <button class="filter-btn" data-filter="varios">Idiomas | Varios</button>
+        </div>
+
+        <div class="certs-grid">
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2026</p>
+                </div>
+                <h3>Desarrollo Sostenible y Agenda 2030 para la administración pública</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Desarrollo sostenible y su aplicación en la gestión del Estado.</p>
+                <span class="cert-badge">Agenda 2030</span>
+                <span class="cert-badge">ODS</span>
+                <a class="cert-link" href="assets/certificates/2026_Desarrollo_Sostenible_y_Agenda_2030_para_la_Administracion_Publica.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="genero">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-venus"></i></div>
+                    <p class="cert-year">2026</p>
+                </div>
+                <h3>Derechos de las mujeres indígenas y protección especial de la niñez y adolescencia indígenas</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>                
+                <span class="cert-badge">Derechos</span>                
+                <span class="cert-badge">Inclusión</span>
+                <span class="cert-badge">Políticas Públicas</span>                
+                <a class="cert-link" href="assets/certificates/2026_Derechos_de_las_mujeres_indigenas_y_proteccion_especial_de_la_ninez.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2025</p>
+                </div>
+                <h3>Excel Nivel Avanzado</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Herramientas avanzadas de análisis en planillas de cálculo.</p>
+                <span class="cert-badge">Office</span>
+                <a class="cert-link" href="assets/certificates/2025_Excel_avanzado.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2025</p>
+                </div>
+                <h3>Guía de formulación ética de proyectos de ciencia de datos e inteligencia artificial</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Ética aplicada al diseño de proyectos de datos e Inteligencia Artificial.</p>
+                <span class="cert-badge">Ética</span>
+                <span class="cert-badge">Inteligencia Artificial</span>
+                <a class="cert-link" href="assets/certificates/2025_Guia_de_formulacion_etica_de_proyectos_de_ciencia_de_datos_e_inteligencia_artificial.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2025</p>
+                </div>
+                <h3>International Merchandise Trade Statistics (IMTS)</h3>
+                <p class="cert-inst">UN DESA · OMC · UNCTAD</p>
+                <p class="cert-desc">Estadísticas de comercio internacional de mercancías.</p>
+                <span class="cert-badge">Comercio Internacional</span>
+                <span class="cert-badge">Aduanas</span>
+                <a class="cert-link" href="assets/certificates/2025_International_Merchandise_Trade_Statistics.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2025</p>
+                </div>
+                <h3>Gestión Ágil de Proyectos</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Metodologías ágiles aplicadas a la gestión de proyectos.</p>
+                <span class="cert-badge">Scrum</span>
+                <a class="cert-link" href="assets/certificates/2025_Gestion_agil_de_proyectos.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+
+            <div class="cert-card" data-category="varios">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-people-group"></i></div>
+                    <p class="cert-year">2024</p>
+                </div>
+                <h3>Habilidades conexas al liderazgo</h3>
+                <p class="cert-inst">Visionarios · Universidad Adolfo Ibáñez</p>
+                <p class="cert-desc">Desarrollo de habilidades para liderar equipos.</p>
+                <span class="cert-badge">Liderazgo</span>
+                <span class="cert-badge">Equipos</span>
+                <a class="cert-link" href="assets/certificates/2024_Habilidades_conexas_al_liderazgo.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="genero">
+                <div class="cert-top">                    
+                    <div class="cert-icon"><i class="fas fa-venus"></i></div>
+                    <p class="cert-year">2024</p>
+                </div>
+                <h3>Liderazgo con perspectiva de género para la Alta Dirección Pública</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Liderazgo con enfoque de género en el sector público.</p>
+                <span class="cert-badge">Liderazgo</span>
+                <span class="cert-badge">Género</span>
+                <a class="cert-link" href="assets/certificates/2024_Liderazgo_con_perspectiva_de_genero.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Data Analyst in Python</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Manipulación, análisis estadístico y visualización de datos.</p>
+                <span class="cert-badge">Python</span>                
+                <a class="cert-link" href="assets/certificates/2023_Data_Analyst_with_Python.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Data Manipulation with pandas</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Manipulación de datos con pandas.</p>
+                <span class="cert-badge">Python</span>
+                <a class="cert-link" href="assets/certificates/2023_Data_Manipulation_with_Pandas.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Joining Data with pandas</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Combinación y cruce de tablas con pandas.</p>
+                <span class="cert-badge">Python</span>
+                <a class="cert-link" href="assets/certificates/2023_Joining_Data_with_Pandas.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Introduction to Data Visualization with Seaborn</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Visualización de datos con Seaborn.</p>
+                <span class="cert-badge">Python</span>
+                <span class="cert-badge">Visualización</span>
+                <a class="cert-link" href="assets/certificates/2023_Introduction_to_data_visualization_with_seaborn.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Exploratory Data Analysis in Python</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Análisis exploratorio de datos en Python.</p>
+                <span class="cert-badge">Python</span>
+                <span class="cert-badge">EDA</span>
+                <a class="cert-link" href="assets/certificates/2023_Exploratory_data_analysis_in_python.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Sampling in Python</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Técnicas de muestreo en Python.</p>
+                <span class="cert-badge">Python</span>
+                <span class="cert-badge">Estadística</span>
+                <a class="cert-link" href="assets/certificates/2023_Sampling_in_python.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Hypothesis Testing in Python</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Pruebas de hipótesis en Python.</p>
+                <span class="cert-badge">Python</span>
+                <span class="cert-badge">Estadística</span>
+                <a class="cert-link" href="assets/certificates/2023_Hypothesis_testing_in_python.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Introduction to the Tidyverse</h3>
+                <p class="cert-inst">DataCamp</p>
+                <p class="cert-desc">Introducción al ecosistema tidyverse de R.</p>
+                <span class="cert-badge">R</span>
+                <a class="cert-link" href="assets/certificates/2023_Introduction_to_Tidyverse.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="genero">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-venus"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Enfoque de Género Aplicado a la Producción Estadística</h3>
+                <p class="cert-inst">Instituto Nacional de Estadísticas, Chile</p>
+                <p class="cert-desc">Perspectiva de género en la producción estadística oficial.</p>
+                <span class="cert-badge">Género</span>
+                <span class="cert-badge">Estadística</span>
+                <a class="cert-link" href="assets/certificates/2023_Enfoque_de_genero_aplicado_a_las_estadisticas.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="genero">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-venus"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Políticas Públicas con Enfoque de Género</h3>
+                <p class="cert-inst">Dirección Nacional del Servicio Civil</p>
+                <p class="cert-desc">Diseño de políticas públicas con perspectiva de género.</p>
+                <span class="cert-badge">Género</span>
+                <span class="cert-badge">Políticas Públicas</span>
+                <a class="cert-link" href="assets/certificates/2023_Politicas_Publicas_con_Enfoque_de_Genero.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2023</p>
+                </div>
+                <h3>Calidad del Servicio y Experiencia Usuaria</h3>
+                <p class="cert-inst">Instituto Nacional de Estadísticas, Chile</p>
+                <p class="cert-desc">Calidad de servicio y experiencia usuaria en el sector público.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <a class="cert-link" href="assets/certificates/2023_Calidad_de_Servicio_y_Experiencia_Usuaria.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+            
+            <div class="cert-card" data-category="varios">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-people-group"></i></div>
+                    <p class="cert-year">2022</p>
+                </div>
+                <h3>Resolución de Conflictos y Manejo del Estrés</h3>
+                <p class="cert-inst">Gestión Global · Universidad Adolfo Ibáñez</p>
+                <p class="cert-desc">Resolución de conflictos y manejo del estrés en contextos organizacionales.</p>
+                <span class="cert-badge">Equipos</span>
+                <span class="cert-badge">Conflicto</span>
+                <span class="cert-badge">Estrés</span>
+                <a class="cert-link" href="assets/certificates/2022_Resolucion_de_conflictos_y_manejo_del_estres.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2022</p>
+                </div>
+                <h3>Inducción General a la Administración del Estado</h3>
+                <p class="cert-inst">Contraloría General de la República</p>
+                <p class="cert-desc">Funcionamiento y normativa de la administración pública chilena.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <a class="cert-link" href="assets/certificates/2022_Induccion_General_a_la_Administracion_del_Estado.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="genero">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-venus"></i></div>
+                    <p class="cert-year">2022</p>
+                </div>
+                <h3>Inducción a las Políticas de Género</h3>
+                <p class="cert-inst">Ministerio de la Mujer y Equidad de Género</p>
+                <p class="cert-desc">Marco institucional de las políticas de género en Chile.</p>
+                <span class="cert-badge">Género</span>
+                <span class="cert-badge">Políticas Públicas</span>
+                <a class="cert-link" href="assets/certificates/2022_Induccion_a_las_politicas_de_genero.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2021</p>
+                </div>
+                <h3>Bloomberg Market Concepts (BMC)</h3>
+                <p class="cert-inst">Bloomberg LP</p>
+                <p class="cert-desc">Fundamentos de mercados financieros en la terminal Bloomberg.</p>
+                <span class="cert-badge">Finanzas</span>
+                <span class="cert-badge">Economía</span>  
+                <a class="cert-link" href="assets/certificates/2021_Bloomberg_market_concepts.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>              
+            </div>
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2021</p>
+                </div>
+                <h3>Data manipulation with R</h3>
+                <p class="cert-inst">Global Analytics</p>
+                <p class="cert-desc">Manipulación y transformación de datos con R.</p>
+                <span class="cert-badge">R</span>
+                <a class="cert-link" href="assets/certificates/2021_Data_manipulation_with_R.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="varios">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-language"></i></div>
+                    <p class="cert-year">2020</p>
+                </div>
+                <h3>Inglés como Segunda Lengua — Nivel C1 (Avanzado)</h3>
+                <p class="cert-inst">St. Giles International</p>
+                <p class="cert-desc">Vancouver, Canadá.</p>
+                <span class="cert-badge">Idiomas</span>
+                <a class="cert-link" href="assets/certificates/2020_English_C1.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="programacion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Ciencia de Datos en R</h3>
+                <p class="cert-inst">Centro de Economía y Política Regional UAI (CEPR)</p>
+                <p class="cert-desc">Curso de ciencia de datos aplicada con R.</p>
+                <span class="cert-badge">R</span>
+                <span class="cert-badge">Estadística</span>
+                <a class="cert-link" href="assets/certificates/2019_Ciencia_de_dato_con_R.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="datos">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Uso y Procesamiento de Datos Censales para la Generación de Indicadores Sociodemográficos</h3>
+                <p class="cert-inst">CEPAL · CELADE</p>
+                <p class="cert-desc">Indicadores sociodemográficos a partir de datos censales.</p>
+                <span class="cert-badge">Indicadores sociales</span>
+                <span class="cert-badge">Demografía</span>
+                <span class="cert-badge">Geoespacial</span>
+                <a class="cert-link" href="assets/certificates/2019_Datos_Censales_para_la_Generacion_de_Indicadores_Sociodemograficos.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Gestión Pública para el Desarrollo</h3>
+                <p class="cert-inst">Banco Interamericano de Desarrollo (BID)</p>
+                <p class="cert-desc">Datos para políticas públicas, gestión subnacional y proyectos de desarrollo.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <a class="cert-link" href="assets/certificates/2019_Gestion_publica_para_el_desarrollo.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Datos para la Efectividad de las Políticas Públicas</h3>
+                <p class="cert-inst">Banco Interamericano de Desarrollo (BID)</p>
+                <p class="cert-desc">Uso de datos y evidencia para mejorar las políticas públicas.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <span class="cert-badge">Políticas Públicas</span>
+                <a class="cert-link" href="assets/certificates/2019_Datos_para_la_efectividad_de_las_politicas_publicas.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Gestión de Gobiernos Subnacionales para Resultados</h3>
+                <p class="cert-inst">Banco Interamericano de Desarrollo (BID)</p>
+                <p class="cert-desc">Gestión por resultados en gobiernos subnacionales.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <a class="cert-link" href="assets/certificates/2019_Gestion_de_gobiernos_subnacionales_para_resultados.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+
+            <div class="cert-card" data-category="administracion">
+                <div class="cert-top">
+                    <div class="cert-icon"><i class="fas fa-landmark"></i></div>
+                    <p class="cert-year">2019</p>
+                </div>
+                <h3>Gestión de Proyectos de Desarrollo</h3>
+                <p class="cert-inst">Banco Interamericano de Desarrollo (BID)</p>
+                <p class="cert-desc">Formulación y gestión de proyectos de desarrollo.</p>
+                <span class="cert-badge">Gobernanza</span>
+                <a class="cert-link" href="assets/certificates/2019_Gestion_de_proyectos_de_desarrollo.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Ver certificado
+                </a>
+            </div>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="certs-cta">
+            <p>¿Quieres más detalle sobre alguna certificación o credencial?</p>
+            <div class="hero-buttons">
+                <a href="assets/documents/Cv_Kuhn_Ana_Elisa_junio_2026.pdf" class="btn btn-primary" download="CV_Ana_Elisa_Kuhn.pdf">Descargar CV</a>
+                <a href="index.html#contact" class="btn btn-secondary">Contáctame</a>
+                <a href="https://www.linkedin.com/in/ana-elisa-kuhn" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Ana Elisa Kuhn. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="index.html#about">Sobre Mí</a>
+                <a href="index.html#work">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
